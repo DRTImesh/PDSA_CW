@@ -1,9 +1,8 @@
-#include "include/System.h"
 
-#include <iostream>
-#include <string>
+#include "System.h"
 
-int main()
-{
-
+int main() {
+    System hotelSystem;
+    hotelSystem.mainMenu();
+    return 0;
 }

@@ -1,22 +1,19 @@
+
 #ifndef SYSTEM_H
 #define SYSTEM_H
 
-#include <queue>
-#include <string>
+#include "Customer.h"
+#include "Hotel.h"
 #include <unordered_map>
 #include <vector>
 
-#include "Customer.h"
-#include "Hotel.h"
-
 class System {
-
 private:
-
-
+    Hotel hotel;
+    std::unordered_map<int, Customer> customerMap;  // Using a map to store customer records
 
 public:
-   
+    System();
     void mainMenu();
     void add();
     void display();
@@ -25,13 +22,6 @@ public:
     int check(int);
     void modify(int);
     void deleteRec(int);
-    Hotel() {
-    customerList = nullptr;
-    topOfStack = -1;
-}
-
 };
 
-
-
-#endif 
+#endif

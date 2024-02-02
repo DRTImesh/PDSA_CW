@@ -4,8 +4,8 @@
 #include <string>
 
 struct Hotel {
-    std::string name[50];
-    std::string location[50];
+    std::string name;
+    std::string location;
     int totalRooms;
     int availableRooms;
     float roomRate;
